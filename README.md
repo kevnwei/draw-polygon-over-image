@@ -1,6 +1,10 @@
 # draw-polygon-over-image
 Draw rectangle and polygon over image using canvas, depend on jquery only, import and export json string.
 
+# note
+
+for the scale feature, just fit for 2:1 size image only currently. will be updated later.
+
 # usage
 <pre>
 function cb(ret) {
