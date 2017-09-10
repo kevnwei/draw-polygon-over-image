@@ -22,6 +22,7 @@ var painter = function () {
 	this.scaleSize = 1;
 	this.imageSize = 0;
 	this.isListen = 0;
+	this.wdRate;
 
 	this.image;
 	this.activePoint;
@@ -167,6 +168,7 @@ var painter = function () {
 			self.imageSize = IMG_WIDTH;
 		}
 		if (onload) {
+			self.wdRate = self.image.naturalWidth / self.image.naturalHeight;
 			self.image.width = 1024;
 			self.scaleSize = self.image.width / IMG_WIDTH;
 			self.image.height = self.scaleSize * IMG_HEIGHT;
@@ -519,7 +521,7 @@ var painter = function () {
 		e.preventDefault();
 		var preWidth = self.image.width;
 		self.image.width += delta;
-		self.image.height += delta / 2;
+		self.image.height += Math.round(delta / self.wdRate);
 		self.scaleSize = self.image.width / preWidth;
 		self.scalePoints();
 		self.resize();
