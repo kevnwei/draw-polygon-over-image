@@ -2,7 +2,7 @@
 Draw rectangle and polygon over image using canvas, depend on jquery only, import and export json string.
 
 # Features
-
+<pre>
 DRAW: rectangle and polygon
 DRAG: select the rectangle or polygon in RECTANGLE mode, and drag it to somewhere you want to
 TYPE: change the TYPE of the rectangle or polygon by right click the shape, and select the right TYPE in the Popup
@@ -15,6 +15,7 @@ VIEW: in the view mode, you cannot edit the shapes
 SELECT: you can click the shape to select it, and drag it, or drag the picture
 DELETE: you can delete the shape by select it and press "d"
 REMOVE: remove one point of the polygon by right click it
+</pre>
 
 # usage
 <pre>
